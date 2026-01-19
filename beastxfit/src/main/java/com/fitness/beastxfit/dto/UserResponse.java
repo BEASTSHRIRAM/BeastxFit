@@ -16,8 +16,8 @@ public class UserResponse {
 
     private String email;
     private String password;
-    private String firstname;
-    private String lastname;
+    private String firstName;
+    private String lastName;
     //whenever we push any record its value(time bro)is automatically genereation
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
