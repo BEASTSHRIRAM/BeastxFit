@@ -5,10 +5,12 @@ import com.fitness.beastxfit.dto.RegisterRequest;
 import com.fitness.beastxfit.dto.UserResponse;
 import com.fitness.beastxfit.model.User;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
+@Slf4j
 public class UserService {
     private final UserRepository repository;
     public UserResponse register(RegisterRequest request) {
@@ -46,5 +48,10 @@ public class UserService {
         userResponse.setCreatedAt(user.getCreatedAt());
         userResponse.setUpdatedAt(user.getUpdatedAt());
         return userResponse;
+    }
+
+    public Boolean existByUserId(String userId) {
+        log.info("Calling User service for {}",userId);
+        return repository.existsById(userId);
     }
 }
