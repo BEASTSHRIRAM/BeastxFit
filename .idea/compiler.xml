@@ -3,20 +3,12 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Annotation profile for beastxfit" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath>
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
-        </processorPath>
-        <module name="beastxfit" />
-      </profile>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka" />
+        <module name="configserver" />
       </profile>
       <profile name="Annotation profile for aiservice" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -27,6 +19,7 @@
         </processorPath>
         <module name="aiservice" />
         <module name="activityservice" />
+        <module name="beastxfit" />
       </profile>
     </annotationProcessing>
   </component>
@@ -35,6 +28,7 @@
       <module name="activityservice" options="-parameters" />
       <module name="aiservice" options="-parameters" />
       <module name="beastxfit" options="-parameters" />
+      <module name="configserver" options="-parameters" />
       <module name="eureka" options="-parameters" />
     </option>
   </component>
