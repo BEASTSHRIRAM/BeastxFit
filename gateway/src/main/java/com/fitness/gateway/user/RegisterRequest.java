@@ -1,4 +1,4 @@
-package com.fitness.beastxfit.dto;
+package com.fitness.gateway.user;
 
 
 import jakarta.validation.constraints.Email;
@@ -11,9 +11,10 @@ public class RegisterRequest {
     @NotBlank(message ="Email is required")
     @Email(message ="Invalid email format")
     private String email;
-    private String KeycloakId;
+
     @NotBlank(message="Passsword is required")
     @Size(min = 6,message = "password must have 6 characters ")
+    private String keycloakId;
     private String password;
     private String firstName;
     private String lastName;
