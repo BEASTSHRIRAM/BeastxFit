@@ -117,7 +117,7 @@ BeastXFit follows a microservices architecture pattern with the following compon
 - **Spring Boot Web:** REST API development
 - **Spring Data JPA:** ORM for PostgreSQL (User Service)
 - **Spring Data MongoDB:** Document database access (Activity & AI Services)
-- **Spring Kafka:** Event streaming and message processing
+- **Apache Kafka:** Event streaming and message processing
 - **Spring AI:** AI-powered recommendations (Google Gemini integration)
 - **Spring Security:** Resource server and JWT validation
 
